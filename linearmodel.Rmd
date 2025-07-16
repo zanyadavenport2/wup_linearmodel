@@ -1,0 +1,30 @@
+---
+title: "linearmodel"
+name: "Zanya Davenport"
+date: "Summer 2025"
+output: html_document
+---
+
+```{r include=FALSE,echo=FALSE}
+require(knitr)
+require(tidyverse)
+require(tigerstats)
+Data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt", sep="", header=TRUE)
+```
+
+```{r}
+simp <- lm(SIMS~ARM,data=Data)
+plot(SIMS~ARM,data=Data)
+abline(simp)
+summary.lm(simp)
+```
+
+```{r}
+target<-data.frame(ARM=88, GRIP=94)
+```
+
+```{r}
+predict(simp,target,interval=c("prediction"))
+```
+
+
