@@ -1,5 +1,5 @@
 ---
-title: "linearmodel"
+title: "Linearmodel"
 name: "Zanya Davenport"
 date: "Summer 2025"
 output: html_document
