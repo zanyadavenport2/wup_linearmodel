@@ -48,6 +48,7 @@ summary.lm(ARMGRIP_2)
 predict(ARMGRIP_2,target,interval=c("prediction"))
 ```
 
+Now we are going to compare models simp and newGrip using the anova command. 
 
 
 
